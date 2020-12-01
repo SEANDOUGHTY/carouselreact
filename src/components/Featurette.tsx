@@ -1,9 +1,7 @@
 import React from 'react';
 
 
-const Featurette = (props: any) => {
-  console.log(props)
-  return (
+const Featurette = (props: any) => (
     <div>
       <hr className="featurette-divider" />
       <div className="row featurette">
@@ -23,6 +21,4 @@ const Featurette = (props: any) => {
       </div>
     </div>
   )
-};
-
 export default Featurette;
