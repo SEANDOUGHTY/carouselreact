@@ -4,11 +4,11 @@ import Header from './components/Header';
 import Body from './Body'
 import Footer from './components/Footer';
 
-const App = () => (
+const App = (data: any) => (
   <div className="App">
-    <Header/>
-    <Body/>
-    <Footer/>
+    <Header {...data} />
+    <Body {...data} />
+    <Footer {...data} />
   </div>
 );
 
