@@ -1,25 +1,23 @@
 import React from 'react';
-import Carousel from './Carousel';
-import Featurette from './Featurette';
-import Card from './Card';
+import Carousel from './components/Carousel';
+import Featurette from './components/Featurette';
+import Card from './components/Card';
 
-function Body() {
-  return (
-    <div>
-    <Carousel />
+const Body = () => (
+  <div>
+    <Carousel/>
     <div className="container marketing">
       <div className="row">
-            <Card />
-            <Card />
-            <Card />
+        <Card/>
+        <Card/>
+        <Card/>
       </div>
-
-      <Featurette align="left" />
-      <Featurette align="right" />
-      <Featurette align="left" />
-      <hr className="featurette-divider" />
-      </div>
+      <Featurette align="left"/>
+      <Featurette align="right"/>
+      <Featurette align="left"/>
+      <hr className="featurette-divider"/>
     </div>
-    )
-}
+  </div>
+);
+
 export default Body;
