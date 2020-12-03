@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from './components/Carousel';
 import Featurette from './components/Featurette';
 import Card from './components/Card';
+import Purchase from "./components/Purchase";
 
 function createCard(card: any){
   return (<Card {...card}/>)
@@ -12,16 +13,17 @@ function createFeaturette(featurette: any, index: number) {
 }
 
 const Body = (data: any) => (
-  <div>
+  <body>
     <Carousel {...data}/>
     <div className="container marketing">
       <div className="row">
         {data.cards.map(createCard)}
       </div>
-        {data.featurettes.map(createFeaturette)}    
+        {data.featurettes.map(createFeaturette)}
       <hr className="featurette-divider"/>
     </div>
-  </div>
+    <Purchase />
+  </body>
 );
 
 export default Body;

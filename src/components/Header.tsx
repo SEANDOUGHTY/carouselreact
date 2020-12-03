@@ -1,32 +1,27 @@
 import React from 'react';
+import image from '../assets/logo/logo-icon.png';
 
 const Header = (data: any) => (
-    <header>
-      <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a className="navbar-brand" href="/#">{data.info.company}</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="/#">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/#">Link</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="/#" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form className="form-inline mt-2 mt-md-0">
-            <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header>
-  );
+  <header>
+    <nav className="navbar navbar-expand-md py-0 px-5 my-0">
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"/>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarCollapse">
+        <ul className="navbar-nav mr-auto float-left">
+          <li className="nav-item">
+            <a className="btn btn-info mx-2 py-1" href="/#purchase">خرید</a>
+          </li>
+          <li className="nav-item active">
+            <a className="btn btn-info mx-2 py-1" href="/#">خانه<span className="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+      <b><a className="navbar-brand text-uppercase" href="/">{data.info.company}</a></b>
+      <img src={image} width="45px" alt="logo" className="img-rounded border"/>
+    </nav>
+  </header>
+);
 
 export default Header;
