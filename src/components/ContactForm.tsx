@@ -1,15 +1,19 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import emailjs from 'emailjs-com'; 
 
-declare var process : {
+declare var process: {
   env: {
     SERVICE_ID: string
     TEMPLATE_ID: string
     USER_ID: string
   }
-}
+};
+
 
 const ContactForm = () => {
+  
+  const [messageSent, setMessageSent] = useState(false);
+
   function sendEmail(e: any) {
     e.preventDefault();
 
@@ -19,9 +23,15 @@ const ContactForm = () => {
       }, (error) => {
         console.log(error.text);
       });
+    setMessageSent(true);
   }
   
-  return (
+  return (messageSent ?
+    <div>
+      <h3>Message Recieved</h3>
+      <p>We will be in touch with you soon!</p>
+    </div>
+    :
     <div className="form-block">
       <form className="contact-form" onSubmit={sendEmail}>
         <div className="form-group">

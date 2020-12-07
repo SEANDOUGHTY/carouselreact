@@ -17,7 +17,7 @@ const App = (data: any) => (
       <Header {...data} />
       <Switch>
         <Route path="/contact">
-          <Contact />
+          <Contact {...data}/>
         </Route>
         <Route path="/">
           <Body {...data} />
