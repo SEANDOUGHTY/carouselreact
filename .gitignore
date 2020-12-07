@@ -24,3 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 
 src/Bucket.json
+
+# vs code
+.vscode
