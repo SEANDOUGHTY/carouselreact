@@ -9,7 +9,7 @@ const Contact = (data: any) => (
     <body>
     <div className="contact">
     <section className="mb-4">
-    <h2 className="h1-responsive font-weight-bold text-center my-4">Contact Us</h2>
+    <h2 className="h1-responsive font-weight-bold text-center my-4">{data.info.contactTitle}</h2>
         <p className="text-center w-responsive mx-auto mb-5">{data.info.contactMessage}</p>
       <div className="container contact-container">
         <div className="row">

@@ -13,7 +13,7 @@ function createFeaturette(featurette: any, index: number) {
 }
 
 const Body = (data: any) => (
-  <body>
+  <body className="rtl">
     <Carousel {...data}/>
     <div className="container marketing">
       <div className="row">
@@ -22,7 +22,7 @@ const Body = (data: any) => (
         {data.featurettes.map(createFeaturette)}
       <hr className="featurette-divider"/>
     </div>
-    <Purchase />
+    {/* <Purchase /> */}
   </body>
 );
 

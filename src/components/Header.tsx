@@ -14,7 +14,7 @@ const Header = (data: any) => (
             <a className="btn btn-info mx-2 py-1" href="/#purchase">خرید</a>
           </li>
           <li className="nav-item">
-            <a className="btn btn-info mx-2 py-1" href="/contact">Contact</a>
+            <a className="btn btn-info mx-2 py-1" href="/contact">{data.info.contactTitle}</a>
           </li>
           <li className="nav-item active">
             <a className="btn btn-info mx-2 py-1" href="/#">خانه<span className="sr-only">(current)</span></a>
