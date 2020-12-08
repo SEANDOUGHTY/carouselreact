@@ -22,19 +22,3 @@ const CarouselItem = (props: any) => {
 }
 
 export default CarouselItem
-
-
-{/* <div className={`carousel-item ${props.active === "true" ? "active" : ""}`}>
-      <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-           preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-        <rect width="100%" height="100%" fill="#777"/>
-      </svg>
-      <div className="container">
-        <div className={`carousel-caption text-right row`}>
-          
-          <div className="col">
-            
-          </div>
-        </div>
-      </div>
-    </div> */}
