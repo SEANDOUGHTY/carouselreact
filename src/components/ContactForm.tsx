@@ -11,12 +11,9 @@ declare var process: {
 
 
 const ContactForm = () => {
-
   const [messageSent, setMessageSent] = useState(false);
-
   function sendEmail(e: any) {
     e.preventDefault();
-
     emailjs.sendForm(process.env["SERVICE_ID"], process.env["TEMPLATE_ID"], e.target, process.env["USER_ID"])
       .then((result) => {
         console.log(result.text);
@@ -27,12 +24,12 @@ const ContactForm = () => {
   }
 
   return (messageSent ?
-    <div>
-      <h3>Message Recieved</h3>
-      <p>We will be in touch with you soon!</p>
+    <div className="text-right">
+      <h3>پیام شما دریافت شد.</h3>
+      <p>به زودی با شما در تماس خواهیم بود.</p>
     </div>
     :
-    <div className="form-block">
+    <div className="form-block text-right">
       <form className="contact-form" onSubmit={sendEmail}>
         <div className="form-group">
           <label>نام</label>

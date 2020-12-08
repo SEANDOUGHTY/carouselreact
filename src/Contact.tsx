@@ -6,7 +6,7 @@ import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-
 
 
 const Contact = (data: any) => (
-  <body className="rtl" style={{ paddingTop: "132px" }}>
+  <body className="text-right" dir="rtl" style={{ paddingTop: "162px" }}>
     <div className="contact">
       <section className="mb-4">
         <h2 className="h1-responsive font-weight-bold text-center my-4">{data.info.contactTitle}</h2>
@@ -17,8 +17,8 @@ const Contact = (data: any) => (
               <ContactForm />
             </div>
             <div className="col-md-4">
-              <div className="contact-details">
-                <img src={image} width="150px" alt="logo" className="img-rounded border"></img>
+              <div className="contact-details text-right float-left">
+                <img src={image} width="150px" alt="logo" className="img-rounded border" />
                 <h4>{data.info.company}</h4>
                 <p>
                   <FontAwesomeIcon icon={faMapMarkerAlt} />  {data.info.address[0]}<br />

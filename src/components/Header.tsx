@@ -3,10 +3,10 @@ import image from '../assets/logo/logo-center.png';
 
 const Header = (data: any) => (
   <header>
-    <nav className="navbar navbar-default navbar-fixed-top" style={{height: "162px"}} data-toggle="affix"> 
+    <nav className="navbar navbar-default navbar-fixed-top" style={{ height: "162px" }} data-toggle="affix">
       <div className="container-fluid h-100">
         <div className="mx-auto">
-          <a className="navbar-brand p-0 mx-auto" href="/#"><img src={image} alt="logo" style={{height: "200%"}} /></a>
+          <a className="navbar-brand p-0 mx-auto" href="/#"><img src={image} alt="logo" style={{ height: "200%", marginBottom: "5px"}} /></a>
         </div>
         <div className="navbar-header">
           <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -29,6 +29,7 @@ const Header = (data: any) => (
         </div>
       </div>
     </nav>
+  </header>
 );
 
 export default Header;
