@@ -11,6 +11,7 @@ import Body from './Body'
 import Contact from './Contact'
 import Footer from './components/Footer';
 
+
 const App = (data: any) => (
   <div className="App">
     <Router>
