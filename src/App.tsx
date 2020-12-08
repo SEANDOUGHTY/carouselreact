@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
 import Header from './components/Header';
@@ -13,7 +12,7 @@ import Footer from './components/Footer';
 
 
 const App = (data: any) => (
-  <div className="App">
+  <div className="App pt-0">
     <Router>
       <Header {...data} />
       <Switch>
@@ -28,5 +27,7 @@ const App = (data: any) => (
     </Router>
   </div>
 );
+
+document.getElementsByTagName('html')[0].setAttribute("dir", "rtl");
 
 export default App;
