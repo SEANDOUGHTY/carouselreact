@@ -21,4 +21,4 @@ const CarouselItem = (props: any) => {
   );
 }
 
-export default CarouselItem
+export default CarouselItem;

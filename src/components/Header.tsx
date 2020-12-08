@@ -29,7 +29,6 @@ const Header = (data: any) => (
         </div>
       </div>
     </nav>
-  </header>
 );
 
 export default Header;

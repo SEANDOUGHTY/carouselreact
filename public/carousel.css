@@ -3,12 +3,28 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    /* padding-top: 3rem; */
+    /* padding-bottom: 3rem; */
     color: #5a5a5a;
   }
   
+  /*  CUSTOMIZE THE NAVBAR 
+  -------------------------------------------------*/
+
+  .navbar {
+    margin-bottom: 0px;
+    text-align: left;
+  }
   
+  .nav-link div {
+    color: white;
+  }
+
+  .navbar-brand div{
+    color: #227177;
+    font-weight: bold;
+  } 
+
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   .carousel {
