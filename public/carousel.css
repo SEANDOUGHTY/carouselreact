@@ -26,14 +26,19 @@ body {
   .carousel-item {
     height: 32rem;
   }
-  .carousel-item > img {
+ 
+  /* .carousel-image {
+    max-width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 32rem;
+  } */
+  .carousel-image {
+    height: 150px;
+    max-height: 100%;
   }
-  
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -51,7 +56,6 @@ body {
     margin-left: .75rem;
   }
   
-  
   /* Featurettes
   ------------------------- */
   
@@ -66,7 +70,9 @@ body {
     letter-spacing: -.05rem;
   }
   
-  
+  .featurette-image {
+    max-width: 100%;
+  }
   /* RESPONSIVE CSS
   -------------------------------------------------- */
   
@@ -89,3 +95,31 @@ body {
     }
   }
   
+  /* Contact */
+
+.contact {
+  padding: 20px 50px 50px;
+  background-color: #777;
+  margin-bottom: 50px;
+}
+
+.form-block {
+  text-align: left;
+  width: 100%;
+  padding-right: 30px;
+  padding-bottom: 30px
+}
+
+.contact-details{
+  text-align: left;
+}
+
+/* Footer */
+
+.footer{
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}

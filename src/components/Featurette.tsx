@@ -12,7 +12,7 @@ const Featurette = (props: any) => (
       </div>
       <div className={`col-md-5 ${props.align === "right" ? "order-md-1" : ""}`}>
         <img
-          className="img-rounded border px-0"
+          className="img-rounded border px-0 featurette-image"
           src={require("../assets/desk-photos/" + props.img + ".jpg").default}
           alt="carousel"
           width="400px"
