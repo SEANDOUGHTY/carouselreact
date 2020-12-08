@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from './components/Carousel';
 import Featurette from './components/Featurette';
 import Card from './components/Card';
-import Purchase from "./components/Purchase";
 
 function createCard(card: any){
   return (<Card {...card}/>)
@@ -13,7 +12,7 @@ function createFeaturette(featurette: any, index: number) {
 }
 
 const Body = (data: any) => (
-  <body className="rtl">
+  <body className="text-right" dir="rtl" style={{paddingTop: "132px"}}>
     <Carousel {...data}/>
     <div className="container marketing">
       <div className="row">

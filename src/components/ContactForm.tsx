@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com'; 
+import emailjs from 'emailjs-com';
 
 declare var process: {
   env: {
@@ -11,7 +11,7 @@ declare var process: {
 
 
 const ContactForm = () => {
-  
+
   const [messageSent, setMessageSent] = useState(false);
 
   function sendEmail(e: any) {
@@ -25,7 +25,7 @@ const ContactForm = () => {
       });
     setMessageSent(true);
   }
-  
+
   return (messageSent ?
     <div>
       <h3>Message Recieved</h3>
@@ -35,18 +35,18 @@ const ContactForm = () => {
     <div className="form-block">
       <form className="contact-form" onSubmit={sendEmail}>
         <div className="form-group">
-          <label>Name</label>
-          <input type="text" name="from_name" className="form-control" placeholder="Enter name" />
+          <label>نام</label>
+          <input type="text" name="from_name" className="form-control" placeholder="نام" />
         </div>
         <div className="form-group">
-          <label>Email address</label>
-          <input type="email" name="reply_to" className="form-control" placeholder="Enter email" />
+          <label>آدرس ایمیل</label>
+          <input type="email" name="reply_to" className="form-control" placeholder="ایمیل" />
         </div>
         <div className="form-group">
-          <label>Message</label>
-          <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows={5}></textarea>
+          <label>پیام</label>
+          <textarea name="message" className="form-control" id="formControlTextarea1" rows={5}></textarea>
         </div>
-        <button type="submit" value="Send" className="btn btn-info btn-md">Send Message</button>
+        <button type="submit" value="Send" className="btn btn-info btn-md">ارسال</button>
       </form>
     </div>
   );
