@@ -16,6 +16,7 @@ function createCarouselIndicator(carouselItem: any, index: number) {
 const Carousel = (data: any) => {
   let carouselLength = data.carousel.length;
   return (
+    <div>
     <div id="myCarousel" className="carousel slide w-100" data-ride="carousel">
       <ol className="carousel-indicators">
         {data.carousel.map(createCarouselIndicator)}
@@ -31,7 +32,9 @@ const Carousel = (data: any) => {
         <span className="carousel-control-next-icon" aria-hidden="true"/>
         <span className="sr-only">Next</span>
       </a>
-        </div>
+    </div> 
+    <hr />
+    </div>
   )
 };
 export default Carousel;
