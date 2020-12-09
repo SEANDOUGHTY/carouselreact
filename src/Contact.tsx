@@ -6,8 +6,8 @@ import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-
 
 
 const Contact = (data: any) => (
-  <body className="text-right" dir="rtl" style={{ paddingTop: "162px" }}>
-    <div className="contact">
+  <div className="text-right contact" dir="rtl">
+    <div>
       <section className="mb-4">
         <h2 className="h1-responsive font-weight-bold text-center my-4">{data.info.contactTitle}</h2>
         <p className="text-center w-responsive mx-auto mb-5">{data.info.contactMessage}</p>
@@ -34,7 +34,7 @@ const Contact = (data: any) => (
       </section>
     </div>
     <hr />
-  </body>
+  </div>
 );
 
 export default Contact;

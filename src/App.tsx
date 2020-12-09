@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 
 const App = (data: any) => (
-  <div className="App pt-0">
+  <div className="App">
     <Router>
       <Header {...data} />
       <Switch>
