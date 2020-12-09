@@ -15,20 +15,32 @@ body {
     margin-bottom: 0px;
     text-align: left;
   }
-  
-  .nav-link div {
-    color: white;
-  }
 
-  .navbar-brand div{
-    color: #227177;
-    font-weight: bold;
-  } 
+  .navbar-nav {
+    padding-right: 0px;
+  }
 
   .navbar-brand img{
     height: 100%;
     margin-bottom: "5px";
 }
+
+  .nav-logo {
+    height: 50px;
+    background-color: #f8f9fa;
+    /* overflow:visible;  */
+  }
+
+  .nav-logo img{
+    position: absolute;
+    width: 100px;
+    top: 1%;
+    left: 50%;
+    margin-top: 0px; /* Negative half of height. */
+    margin-left: -50px; /* Negative half of width. */
+    z-index: 2;
+  }
+
 
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */

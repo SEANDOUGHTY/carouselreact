@@ -12,7 +12,7 @@ function createFeaturette(featurette: any, index: number) {
 }
 
 const Body = (data: any) => (
-  <body className="text-right" dir="rtl" style={{paddingTop: "162px"}}>
+  <body className="text-right" dir="rtl">
     <Carousel {...data}/>
     <div className="container marketing">
       <div className="row">
