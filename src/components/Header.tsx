@@ -20,10 +20,10 @@ const Header = (data: any) => (
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="nav mx-auto">
             <li>
-              <a className="btn btn-default py-1 mx-1" href="/#">خانه<span className="sr-only">(current)</span></a>
+              <a className="btn btn-default border-danger py-1 mx-1" href="/#">خانه<span className="sr-only">(current)</span></a>
             </li>
             <li>
-              <a className="btn btn-default py-1 mx-1" href="/contact">{data.info.contactTitle}</a>
+              <a className="btn btn-default border-danger py-1 mx-1" href="/contact">{data.info.contactTitle}</a>
             </li>
           </ul>
         </div>
