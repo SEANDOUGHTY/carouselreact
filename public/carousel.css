@@ -7,7 +7,9 @@ body {
     /* padding-bottom: 3rem; */
     color: #5a5a5a;
   }
-  
+
+
+
   /*  CUSTOMIZE THE NAVBAR 
   -------------------------------------------------*/
 
@@ -15,6 +17,10 @@ body {
     margin-bottom: 0px;
     text-align: left;
   }
+
+  /* .navbar-border {
+    border-bottom: 1px solid #333;
+  }  */
 
   .navbar-nav {
     padding-right: 0px;
@@ -33,7 +39,7 @@ body {
 
   .nav-logo img{
     position: absolute;
-    width: 100px;
+    width: 130px;
     top: 1%;
     left: 50%;
     margin-top: 0px; /* Negative half of height. */
