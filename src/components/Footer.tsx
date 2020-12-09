@@ -4,9 +4,11 @@ const date = new Date();
 const year = date.getFullYear();
 
 const Footer = (data: any) => (
-  <footer className="container">
-    <p className="float-right"><a href="/#">بازگشت به بالای صفحه</a></p>
-    <p>&copy; {year} {data.info.company} &middot;</p>
+  <footer>
+    <nav className="navbar fixed-bottom bg-secondary text-light mb-0 rounded-0">
+      <a href="/#" className="float-right text-light">بازگشت به بالای صفحه</a>
+      <p>&copy; {year} &middot; {data.info.company}</p>
+    </nav>
   </footer>
 );
 

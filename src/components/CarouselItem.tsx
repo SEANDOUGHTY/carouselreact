@@ -6,7 +6,8 @@ const CarouselItem = (props: any) => {
         <div className="row carousel-row">
           <div className="col-md-5 carousel-image-caption">
             <h1>{props.title}</h1>
-            <h4>{props.body}</h4>
+            <h2>{props.body}</h2>
+            <br />
             <a className="btn btn-default mt-4" href="/#purchase" role="button">{props.button}</a>
           </div>
           <div className="col-md-7 corousel-image-col text-center">
