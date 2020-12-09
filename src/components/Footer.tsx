@@ -7,7 +7,7 @@ const Footer = (data: any) => (
   <footer>
     <nav className="navbar fixed-bottom bg-secondary text-light mb-0 rounded-0">
       <a href="/#" className="float-right text-light">بازگشت به بالای صفحه</a>
-      <p>&copy; {year} &middot; {data.info.company}</p>
+      <p className="mb-0">&copy; {year} &middot; {data.info.company}</p>
     </nav>
   </footer>
 );

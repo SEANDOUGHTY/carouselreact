@@ -33,7 +33,6 @@ const Contact = (data: any) => (
         </div>
       </section>
     </div>
-    <hr />
   </div>
 );
 
