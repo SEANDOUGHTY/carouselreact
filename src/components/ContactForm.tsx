@@ -43,7 +43,7 @@ const ContactForm = () => {
           <label>پیام</label>
           <textarea name="message" className="form-control" id="formControlTextarea1" rows={5}></textarea>
         </div>
-        <button type="submit" value="Send" className="btn btn-info btn-md">ارسال</button>
+        <button type="submit" value="Send" className="btn btn-default border-warning btn-md">ارسال</button>
       </form>
     </div>
   );
