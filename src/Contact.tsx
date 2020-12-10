@@ -7,17 +7,16 @@ import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-
 
 const Contact = (data: any) => (
   <div className="text-right contact" dir="rtl">
-    <div>
       <section className="mb-4">
         <h2 className="h1-responsive font-weight-bold text-center my-4">{data.info.contactTitle}</h2>
         <p className="text-center w-responsive mx-auto mb-5">{data.info.contactMessage}</p>
         <div className="container contact-container">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-8 col-contact-form">
               <ContactForm />
             </div>
-            <div className="col-md-4">
-              <div className="contact-details text-right float-left">
+            <div className="col-md-3">
+              <div className="contact-details text-right float-right">
                 <img src={image} width="150px" alt="logo" className="img-rounded border" />
                 <h4>{data.info.company}</h4>
                 <p>
@@ -32,7 +31,6 @@ const Contact = (data: any) => (
           </div>
         </div>
       </section>
-    </div>
   </div>
 );
 

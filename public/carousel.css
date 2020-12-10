@@ -158,10 +158,13 @@ body {
 .form-block {
   text-align: left;
   width: 100%;
-  padding-right: 30px;
   padding-bottom: 30px
 }
 
 .contact-details{
   text-align: left;
+}
+
+.col-contact-form{
+  margin-left: 80px;
 }
